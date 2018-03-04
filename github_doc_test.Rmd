@@ -3,21 +3,38 @@ title: "github document test"
 author: "Bryan Shalloway"
 date: "March 4, 2018"
 output: 
-  github_document:
-    toc: true
-    toc_depth: 3
   html_document:
     toc: true
     toc_depth: 3
-    toc_float:
-      collapsed: no
+  github_document:
+    toc: true
+    toc_depth: 3
+params: 
+  output_type:  !r knitr::is_html_output()
+always_allow_html: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+Note that the header options in the .rmd support outputs to both html and md documents -- allowing you to specify which chunks not to render (e.g. not rendering chunks with plotly code that would need to be in html to work properly.)
+
+```{r, eval = FALSE}
+rmarkdown::render("github_doc_test.Rmd", output_format = "all")
+
 ```
 
+
 # R Markdown
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+
+val <- knitr::is_html_output()
+val
+
+params$output_type
+```
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -47,3 +64,16 @@ plot(mtcars)
 
 
 New change made.
+
+##ggplotly
+
+Note that this plotly does not show-up in the simple .md documents on github as it's rendering javascript here
+```{r, plotly version, eval = params$output_type}
+p <- pressure %>% 
+  ggplot(aes(x = temperature, y = pressure, colour = pressure))+
+  geom_point()
+
+plotly::ggplotly(p)
+```
+
+
