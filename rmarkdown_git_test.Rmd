@@ -5,6 +5,12 @@ date: "March 4, 2018"
 output: 
   html_document:
     keep_md: true
+    code_folding: show
+    toc: yes
+    toc_depth: 5
+    toc_float:
+      collapsed: no
+
 
 ---
 
