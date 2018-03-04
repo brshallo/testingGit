@@ -47,7 +47,9 @@ pressure %>%
 
 ```
 
-```{r, plotly version}
+
+Note that this plotly does not show-up in the simple .md documents on github as it's rendering javascript here
+```{r, plotly version, eval = FALSE}
 p <- pressure %>% 
   ggplot(aes(x = temperature, y = pressure, colour = pressure))+
   geom_point()
