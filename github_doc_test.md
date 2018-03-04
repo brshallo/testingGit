@@ -3,8 +3,12 @@ github document test
 Bryan Shalloway
 March 4, 2018
 
+-   [R Markdown](#r-markdown)
+    -   [Including Plots](#including-plots)
+-   [Other](#other)
+
 R Markdown
-----------
+==========
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -30,3 +34,14 @@ You can also embed plots, for example:
 ![](github_doc_test_files/figure-markdown_github/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Other
+=====
+
+Test of other
+
+``` r
+plot(mtcars)
+```
+
+![](github_doc_test_files/figure-markdown_github/unnamed-chunk-1-1.png)
