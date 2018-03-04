@@ -3,9 +3,16 @@ title: "github document test"
 author: "Bryan Shalloway"
 date: "March 4, 2018"
 output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: no
   github_document:
     toc: true
     toc_depth: 3
+    toc_float:
+      collapsed: no
 
 ---
 
