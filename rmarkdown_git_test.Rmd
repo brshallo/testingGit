@@ -47,3 +47,11 @@ pressure %>%
 
 ```
 
+```{r, plotly version}
+p <- pressure %>% 
+  ggplot(aes(x = temperature, y = pressure, colour = pressure))+
+  geom_point()
+
+plotly::ggplotly(p)
+```
+
