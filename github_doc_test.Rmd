@@ -22,6 +22,9 @@ rmarkdown::render("github_doc_test.Rmd", output_format = "all")
 # always_allow_html: yes
 # html_preview: false
 
+##This will force it to continue rendering even when faced with errors
+# knitr::opts_chunk$set(error = TRUE)
+
 ```
 
 
@@ -53,7 +56,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-#Other
+# Other
 
 Test of other
 
@@ -64,7 +67,7 @@ plot(mtcars)
 
 New change made.
 
-##ggplotly
+## ggplotly
 
 Note that this plotly does not show-up in the simple .md documents on github as it's rendering javascript here
 ```{r, plotly version, eval = params$output_type}

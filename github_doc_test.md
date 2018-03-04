@@ -16,6 +16,9 @@ rmarkdown::render("github_doc_test.Rmd", output_format = "all")
 ##below are a couple of options I was looking at
 # always_allow_html: yes
 # html_preview: false
+
+##This will force it to continue rendering even when faced with errors
+# knitr::opts_chunk$set(error = TRUE)
 ```
 
 R Markdown
@@ -23,20 +26,6 @@ R Markdown
 
 ``` r
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(ggplot2)
 
 params$output_type
