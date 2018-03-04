@@ -5,18 +5,15 @@ date: "March 4, 2018"
 output: 
   html_document:
     keep_md: true
-    code_folding: show
     toc: yes
-    toc_depth: 5
-    toc_float:
-      collapsed: no
+    toc_depth: 3
 
 
 ---
 
 
 
-## R Markdown
+# R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
