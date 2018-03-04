@@ -16,8 +16,6 @@ rmarkdown::render("github_doc_test.Rmd", output_format = "all")
 ##below are a couple of options I was looking at
 # always_allow_html: yes
 # html_preview: false
-
-params$output_type
 ```
 
 R Markdown
@@ -25,8 +23,26 @@ R Markdown
 
 ``` r
 library(dplyr)
-library(ggplot2)
 ```
+
+    ## 
+    ## Attaching package: 'dplyr'
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
+
+``` r
+library(ggplot2)
+
+params$output_type
+```
+
+    ## [1] FALSE
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 

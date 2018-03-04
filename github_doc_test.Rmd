@@ -5,10 +5,10 @@ date: "March 4, 2018"
 params: 
   output_type:  !r knitr::is_html_output(excludes = c("markdown"))
 output: 
-  html_document:
+  github_document:
     toc: true
     toc_depth: 3
-  github_document:
+  html_document:
     toc: true
     toc_depth: 3
 ---
@@ -22,7 +22,6 @@ rmarkdown::render("github_doc_test.Rmd", output_format = "all")
 # always_allow_html: yes
 # html_preview: false
 
-params$output_type
 ```
 
 
@@ -32,6 +31,7 @@ params$output_type
 library(dplyr)
 library(ggplot2)
 
+params$output_type
 ```
 
 
