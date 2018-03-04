@@ -44,3 +44,13 @@ You can also embed plots, for example:
 ![](rmarkdown_git_test_files/figure-html/pressure-1.png)<!-- -->
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```r
+pressure %>% 
+  ggplot(aes(x = temperature, y = pressure, colour = pressure))+
+  geom_point()
+```
+
+![](rmarkdown_git_test_files/figure-html/ggglot-1.png)<!-- -->
+
