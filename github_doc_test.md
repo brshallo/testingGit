@@ -12,6 +12,12 @@ Note that the header options in the .rmd support outputs to both html and md doc
 
 ``` r
 rmarkdown::render("github_doc_test.Rmd", output_format = "all")
+
+##below are a couple of options I was looking at
+# always_allow_html: yes
+# html_preview: false
+
+params$output_type
 ```
 
 R Markdown
@@ -20,19 +26,7 @@ R Markdown
 ``` r
 library(dplyr)
 library(ggplot2)
-
-
-val <- knitr::is_html_output()
-val
 ```
-
-    ## [1] TRUE
-
-``` r
-params$output_type
-```
-
-    ## [1] TRUE
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
