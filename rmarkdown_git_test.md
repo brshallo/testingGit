@@ -11,7 +11,7 @@ output:
 
 ---
 
-
+One nice thing about the `keep_md` option is that it does not require separate folders for caching.
 
 # R Markdown
 
